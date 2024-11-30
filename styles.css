@@ -1,3 +1,13 @@
+@font-face {
+    font-family: bronco;
+    src: url("./fonts/bronco-yygzn.ttf");
+}
+
+@font-face {
+    font-family: plat;
+    src: url("./fonts/plat-nomor.otf");
+}
+
 html,
 body {
     height: 100%;
@@ -54,17 +64,43 @@ main {
 }
 
 .logo img {
-    max-width: 20%;
-    height: auto;
-    display: block;
+    width: 160px;
 }
 
 * {
     font-family: "Inter", sans-serif;
 }
 
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: circle;
+    padding: 0 16px 0px 0;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9B361;
+    padding: 16px;
+}
+
+summary {
+    padding: 0 8px;
+    font-size: 32px;
+    font-family: 'bronco';
+}
+
 body {
     background-color: #ffffff;
+    display: flex;
+    flex: 1;
+    position: relative;
 }
 
 section {
@@ -76,6 +112,23 @@ details {
     background-color: #fff;
     border: 1px solid #e5e4e0;
     border-radius: 8px;
+    width: 380px;
+}
+
+span {
+    font-family: plat;
+}
+
+strong {
+    font-family: plat;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
 }
 
 .title {
@@ -144,17 +197,17 @@ main {
     }
 }
 
+.whats-button {
+    position: fixed;
+    bottom: 18px;
+    right: 32px;
+}
+
 .footer {
     background-color: #94B0A7;
     color: #fff;
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
-    margin-top: 20px;
-}
-
-.footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
 }
